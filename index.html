@@ -110,6 +110,14 @@
   .steps h3{color:#fff;font-size:18px;margin-bottom:6px}
   .steps p{font-size:15px}
 
+  /* Team */
+  .team-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:34px}
+  .member{flex:1 1 150px;max-width:210px;background:var(--bg);border-radius:var(--r);padding:28px 20px;text-align:center;border-bottom:4px solid var(--yellow)}
+  .avatar{width:110px;height:110px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;margin:0 auto 14px;font-size:34px;font-weight:700;letter-spacing:.02em;border:3px solid var(--yellow)}
+  img.avatar{object-fit:cover}
+  .member h3{font-size:18px;margin-bottom:4px}
+  .member p{font-size:14.5px;color:var(--muted);font-weight:500}
+
   /* Contact */
   .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px}
   .c-list{margin:24px 0}
@@ -177,6 +185,7 @@
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
       <a href="#contact">Contact</a>
       <a class="btn btn-blue" href="tel:+923284040637">
         <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
@@ -277,6 +286,20 @@
   </div>
 </section>
 
+<section id="team">
+  <div class="wrap">
+    <h2>Our Team</h2>
+    <p class="sub">The people who plan, design and build every project.</p>
+    <div class="team-grid">
+      <div class="member"><img class="avatar" src="images/team-mian-tahir.jpg" alt="Mian Tahir" width="110" height="110" loading="lazy"><h3>Mian Tahir</h3><p>Chief Executive Officer</p></div>
+      <div class="member"><img class="avatar" src="images/team-athar-haider.jpg" alt="Athar Haider" width="110" height="110" loading="lazy"><h3>Athar Haider</h3><p>Architect</p></div>
+      <div class="member"><img class="avatar" src="images/team-khalid-hussain.jpg" alt="Khalid Hussain" width="110" height="110" loading="lazy"><h3>Khalid Hussain</h3><p>Site Engineer</p></div>
+      <div class="member"><img class="avatar" src="images/team-naeem-kasuri.jpg" alt="Naeem Kasuri" width="110" height="110" loading="lazy"><h3>Naeem Kasuri</h3><p>Contractor</p></div>
+      <div class="member"><img class="avatar" src="images/team-waseem-aslam.jpg" alt="Waseem Aslam" width="110" height="110" loading="lazy"><h3>Waseem Aslam</h3><p>Social Media Manager</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="wrap contact-grid">
     <div>
@@ -351,7 +374,7 @@
     if (v('honey')) return;
     btn.disabled = true; btn.textContent = 'Sending...'; note.textContent = '';
     try {
-      const res = await fetch('https://formsubmit.co/ajax/muhammadwasi.com@gmail.com', {
+      const res = await fetch('https://formsubmit.co/ajax/bestbuildersandcompany@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
