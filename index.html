@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Builders &amp; Company | Building and road construction in Lahore</title>
+<meta name="description" content="Best Builders & Company, Lake City Lahore. Construction of houses, commercial buildings and roads, from grey structure to turnkey finishing.">
+<meta property="og:title" content="Best Builders & Company, Lahore">
+<meta property="og:description" content="Building and road construction in Lahore. Call +92 328 4040637.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#166394; --blue-dk:#0f4a70; --blue-xdk:#0b3552;
+    --yellow:#ffde59; --yellow-dk:#f5cc2a;
+    --road:#3a3f47; --text:#3d4550; --muted:#6b7480;
+    --bg:#f4f7fa; --white:#fff; --wa:#1fa855;
+    --r:8px; --max:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Roboto',Arial,sans-serif;color:var(--text);line-height:1.6;background:var(--white)}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  h1,h2,h3,h4{color:var(--blue-xdk);line-height:1.15;font-weight:700}
+  h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+  .sub{color:var(--muted);max-width:60ch}
+  section{padding:76px 0}
+  :focus-visible{outline:3px solid var(--yellow-dk);outline-offset:3px}
+
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:6px;font-weight:700;font-size:15px;border:0;cursor:pointer;transition:background .15s}
+  .btn svg{width:18px;height:18px;fill:currentColor}
+  .btn-yellow{background:var(--yellow);color:var(--blue-xdk)}
+  .btn-yellow:hover{background:var(--yellow-dk)}
+  .btn-blue{background:var(--blue);color:#fff}
+  .btn-blue:hover{background:var(--blue-dk)}
+  .btn-wa{background:var(--wa);color:#fff}
+  .btn-wa:hover{background:#178a45}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:40;background:var(--white);box-shadow:0 1px 0 #e3e9ef}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand img{height:54px;width:auto}
+  .menu{display:flex;align-items:center;gap:26px}
+  .menu a:not(.btn){font-weight:500;font-size:15px;color:var(--road)}
+  .menu a:not(.btn):hover{color:var(--blue)}
+  .burger{display:none;width:44px;height:44px;border:0;border-radius:6px;background:var(--blue);cursor:pointer}
+  .burger span{display:block;width:20px;height:2px;background:#fff;margin:4px auto}
+
+  /* Hero */
+  .hero{position:relative;color:#dce8f2;padding:110px 0 130px;overflow:hidden;
+    background:linear-gradient(100deg,rgba(11,53,82,.95) 32%,rgba(11,53,82,.6) 58%,rgba(11,53,82,.1)),url('images/hero.jpg') center right/cover no-repeat,var(--blue-xdk)}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--white);clip-path:polygon(0 100%,100% 0,100% 100%)}
+  .hero-inner{position:relative;z-index:1;max-width:600px}
+  .tag{display:inline-block;background:var(--yellow);color:var(--blue-xdk);font-weight:700;font-size:13.5px;padding:5px 12px;border-radius:4px;margin-bottom:18px}
+  .hero h1{color:#fff;font-size:clamp(36px,5.4vw,62px);font-weight:900;margin-bottom:18px;letter-spacing:-.01em}
+  .hero p{font-size:18px;margin-bottom:30px;color:#cfdfeb;max-width:50ch}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+  /* Strip */
+  .strip{background:var(--white);padding:0 0 10px}
+  .strip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-10px}
+  .strip-item{display:flex;gap:14px;align-items:center;background:var(--bg);border-left:4px solid var(--yellow);border-radius:var(--r);padding:16px 18px}
+  .strip-item svg{width:30px;height:30px;flex-shrink:0;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .strip-item b{display:block;color:var(--blue-xdk)}
+  .strip-item span{font-size:14px;color:var(--muted)}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .about-img{position:relative}
+  .about-img img{border-radius:var(--r);width:100%;aspect-ratio:4/3;object-fit:cover}
+  .about-img::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--yellow);border-radius:var(--r);z-index:-1}
+  .about p{margin-bottom:14px}
+  .ticks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
+  .ticks li{display:flex;gap:8px;align-items:center;font-weight:500;color:var(--blue-xdk)}
+  .ticks li::before{content:"✓";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;font-size:12px;flex-shrink:0}
+
+  /* Services */
+  .services{background:var(--bg)}
+  .svc-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .svc{background:var(--white);border-radius:var(--r);padding:26px 24px;border-top:4px solid var(--blue)}
+  .svc.road{border-top-color:var(--yellow-dk)}
+  .svc-ico{width:48px;height:48px;border-radius:8px;background:var(--blue);display:grid;place-items:center;margin-bottom:14px}
+  .svc.road .svc-ico{background:var(--road)}
+  .svc-ico svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .svc.road .svc-ico svg{stroke:var(--yellow)}
+  .svc h3{font-size:19px;margin-bottom:6px}
+  .svc p{font-size:15px;color:var(--muted)}
+
+  /* Projects */
+  .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:280px;gap:16px;margin-top:34px}
+  .proj{position:relative;border-radius:var(--r);overflow:hidden;background:#dfe6ec}
+  .proj.wide{grid-column:span 2}
+  .proj img{width:100%;height:100%;object-fit:cover}
+  .proj figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(11,53,82,.9));color:#fff;font-weight:700}
+  .proj figcaption span{display:inline-block;margin-left:8px;font-size:12px;background:var(--yellow);color:var(--blue-xdk);padding:2px 9px;border-radius:20px;vertical-align:middle}
+
+  /* Process */
+  .process{background:var(--blue-xdk);color:#c6d7e5}
+  .process h2{color:#fff}
+  .process .sub{color:#9fb8cc}
+  .steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:36px;counter-reset:s}
+  .steps li{counter-increment:s;background:rgba(255,255,255,.05);border-radius:var(--r);padding:24px 22px}
+  .steps li::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--yellow);color:var(--blue-xdk);font-weight:900;margin-bottom:14px}
+  .steps h3{color:#fff;font-size:18px;margin-bottom:6px}
+  .steps p{font-size:15px}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px}
+  .c-list{margin:24px 0}
+  .c-row{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid #e3e9ef}
+  .c-ico{width:44px;height:44px;border-radius:8px;background:var(--yellow);display:grid;place-items:center;flex-shrink:0}
+  .c-ico svg{width:20px;height:20px;fill:var(--blue-xdk)}
+  .c-row small{display:block;color:var(--muted);font-size:13px}
+  .c-row b{color:var(--blue-xdk);font-weight:500;word-break:break-word}
+  .c-row a:hover b{color:var(--blue)}
+  .map{width:100%;height:220px;border:0;border-radius:var(--r)}
+  form{background:var(--bg);border-radius:var(--r);padding:30px;border-top:4px solid var(--blue)}
+  form h3{font-size:24px;margin-bottom:4px}
+  form>p{color:var(--muted);font-size:14.5px;margin-bottom:20px}
+  .f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  label{display:block;font-weight:500;font-size:14px;color:var(--blue-xdk);margin-bottom:5px}
+  input,select,textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1px solid #c8d4df;border-radius:6px;background:#fff;margin-bottom:14px}
+  input:focus,select:focus,textarea:focus{outline:3px solid var(--yellow);border-color:var(--blue)}
+  textarea{min-height:100px;resize:vertical}
+  form .btn{width:100%;justify-content:center}
+
+  footer{background:var(--blue);color:#d4e3ef;padding:26px 0;font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  footer a:hover{color:var(--yellow)}
+
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:50;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 6px 18px rgba(11,53,82,.35)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+
+  @media (max-width:940px){
+    .about-grid,.contact-grid{grid-template-columns:1fr}
+    .svc-grid,.proj-grid{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .strip-grid{grid-template-columns:1fr}
+    .menu{display:none;position:absolute;top:74px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:6px 20px 18px;box-shadow:0 8px 16px rgba(0,0,0,.08)}
+    .menu.open{display:flex}
+    .menu a:not(.btn){padding:12px 0;border-bottom:1px solid #e3e9ef}
+    .menu .btn{margin-top:12px;justify-content:center}
+    .burger{display:block}
+    .about-img::before{inset:12px -10px -12px 10px}
+  }
+  @media (max-width:580px){
+    section{padding:56px 0}
+    .hero{padding:80px 0 100px}
+    .svc-grid,.proj-grid,.steps,.f-row,.ticks{grid-template-columns:1fr}
+    .proj-grid{grid-auto-rows:240px}
+    .proj.wide{grid-column:auto}
+    form{padding:22px}
+    .brand img{height:46px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Best Builders & Company home"><img src="images/logo.png" alt="Best Builders & Company logo"></a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-blue" href="tel:+923284040637">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+        Call Now</a>
+    </nav>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="tag">Building &amp; road construction · Lahore</span>
+      <h1>We build the homes, buildings and roads Lahore runs on.</h1>
+      <p>From a single house to commercial buildings and society roads, Best Builders &amp; Company delivers strong construction on time, from Lake City across Lahore.</p>
+      <div class="hero-actions">
+        <a class="btn btn-yellow" href="#contact">Get a free estimate</a>
+        <a class="btn btn-wa" href="https://wa.me/923284040637" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.6 14.2c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.4-5.6c-.5-.7-1-1.6-1-2.6s.5-1.4.7-1.7c.2-.2.4-.3.6-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>
+          WhatsApp us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap strip-grid">
+    <div class="strip-item"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg><div><b>Buildings</b><span>Houses, plazas and apartments</span></div></div>
+    <div class="strip-item"><svg viewBox="0 0 24 24"><path d="M8 3 4 21M16 3l4 18M12 4v3M12 10v3M12 16v4"/></svg><div><b>Roads</b><span>Carpeting, curbs and footpaths</span></div></div>
+    <div class="strip-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>On time</b><span>Clear timelines, regular updates</span></div></div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-img"><img src="images/about.jpg" alt="Site engineer checking plans at a Best Builders construction site" loading="lazy"></div>
+    <div>
+      <h2>About Best Builders &amp; Company</h2>
+      <p>Best Builders &amp; Company is a Lahore construction firm based on Commercial Main Boulevard, Lake City. We take on residential and commercial buildings and the roads that connect them.</p>
+      <p>Our team handles every stage, from foundations and grey structure to finishing and road carpeting, with one point of contact for the whole job.</p>
+      <ul class="ticks">
+        <li>Quality materials</li>
+        <li>Experienced engineers</li>
+        <li>Transparent estimates</li>
+        <li>On-time delivery</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES: assumed from the logo (buildings + road). Confirm the final list with the client. -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <h2>Our services</h2>
+        <p class="sub">Building construction and road works, handled by one team.</p>
+      </div>
+      <a class="btn btn-blue" href="#contact">Discuss your project</a>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg></div><h3>Houses &amp; villas</h3><p>Complete homes, from foundation to finishing.</p></div>
+      <div class="svc"><div class="svc-ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"/></svg></div><h3>Commercial buildings</h3><p>Plazas, offices and apartment blocks.</p></div>
+      <div class="svc"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M4 20V8l8-5 8 5v12M4 12h16M4 16h16M9 8v12M15 8v12"/></svg></div><h3>Grey structure</h3><p>Foundations, columns, slabs and brickwork.</p></div>
+      <div class="svc road"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M8 3 4 21M16 3l4 18M12 4v3M12 10v3M12 16v4"/></svg></div><h3>Road construction</h3><p>New roads and asphalt carpeting for societies and commercial areas.</p></div>
+      <div class="svc road"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M3 18h18M5 18v-4h14v4M7 14V9M17 14V9M3 9h18"/></svg></div><h3>Curbs &amp; footpaths</h3><p>Curb stones, tuff tiles and pedestrian walkways.</p></div>
+      <div class="svc"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M3 21h18"/></svg></div><h3>Finishing &amp; renovation</h3><p>Turnkey finishing and upgrades to existing buildings.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS: demo photos (AI-generated). Replace with the client's own project photos in images/ -->
+<section id="projects">
+  <div class="wrap">
+    <h2>Recent projects</h2>
+    <p class="sub">A look at our building and road work across Lahore.</p>
+    <div class="proj-grid">
+      <figure class="proj wide"><img src="images/project-road.jpg" alt="Asphalt road carpeting in a Lahore housing society" loading="lazy"><figcaption>Road carpeting <span>Completed</span></figcaption></figure>
+      <figure class="proj"><img src="images/project-house.jpg" alt="Modern two-storey house" loading="lazy"><figcaption>Residential house <span>Completed</span></figcaption></figure>
+      <figure class="proj"><img src="images/project-plaza.jpg" alt="Commercial plaza under construction" loading="lazy"><figcaption>Commercial plaza <span>Ongoing</span></figcaption></figure>
+      <figure class="proj wide"><img src="images/project-apartments.jpg" alt="Apartment building under construction" loading="lazy"><figcaption>Apartment building <span>Ongoing</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <h2>How we work</h2>
+    <p class="sub">The same four steps for a house, a building or a road.</p>
+    <ol class="steps">
+      <li><h3>Site visit</h3><p>We inspect your plot or road and understand the requirement.</p></li>
+      <li><h3>Estimate</h3><p>You get a written cost and timeline before work starts.</p></li>
+      <li><h3>Construction</h3><p>Our team builds, with progress updates along the way.</p></li>
+      <li><h3>Handover</h3><p>We walk through the finished work with you.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Contact us</h2>
+      <p class="sub">Call, WhatsApp or email us, or visit our office in Lake City.</p>
+      <div class="c-list">
+        <a class="c-row" href="tel:+923284040637"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></div><div><small>Phone / WhatsApp</small><b>+92 328 4040637</b></div></a>
+        <a class="c-row" href="mailto:bestbuildersandcompany@gmail.com"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg></div><div><small>Email</small><b>bestbuildersandcompany@gmail.com</b></div></a>
+        <div class="c-row"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div><div><small>Office</small><b>Commercial Main Boulevard, Lake City, Lahore</b></div></div>
+      </div>
+      <iframe class="map" loading="lazy" title="Best Builders & Company office on Google Maps" src="https://maps.google.com/maps?q=Commercial%20Main%20Boulevard%2C%20Lake%20City%2C%20Lahore&z=15&output=embed"></iframe>
+    </div>
+
+    <form id="quoteForm">
+      <h3>Get a free estimate</h3>
+      <p>Your details open in WhatsApp, ready to send.</p>
+      <div class="f-row">
+        <div><label for="name">Name</label><input id="name" autocomplete="name" required></div>
+        <div><label for="phone">Phone</label><input id="phone" type="tel" autocomplete="tel" placeholder="03xx-xxxxxxx" required></div>
+      </div>
+      <label for="service">Service</label>
+      <select id="service" required>
+        <option value="">Choose a service</option>
+        <option>House / villa</option><option>Commercial building</option><option>Grey structure</option>
+        <option>Road construction</option><option>Curbs &amp; footpaths</option><option>Finishing &amp; renovation</option>
+      </select>
+      <label for="area">Location</label>
+      <input id="area" placeholder="e.g. Lake City, Raiwind Road">
+      <label for="msg">Details</label>
+      <textarea id="msg" placeholder="Plot size, floors, or road length"></textarea>
+      <button class="btn btn-yellow" type="submit">Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Best Builders &amp; Company, Lahore</span>
+    <span><a href="tel:+923284040637">+92 328 4040637</a> &nbsp;|&nbsp; <a href="https://www.bestbuildersandcompany.com">www.bestbuildersandcompany.com</a></span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923284040637" target="_blank" rel="noopener" aria-label="Message Best Builders on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.6 14.2c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.4-5.6c-.5-.7-1-1.6-1-2.6s.5-1.4.7-1.7c.2-.2.4-.3.6-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>
+</a>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const menu = document.getElementById('menu'), burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => burger.setAttribute('aria-expanded', menu.classList.toggle('open')));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }));
+  document.getElementById('quoteForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const v = id => document.getElementById(id).value.trim();
+    const msg = ['Assalam-o-Alaikum Best Builders,', '', 'Name: ' + v('name'), 'Phone: ' + v('phone'),
+      'Service: ' + v('service'), 'Location: ' + (v('area') || '-'), 'Details: ' + (v('msg') || '-')].join('\n');
+    window.open('https://wa.me/923284040637?text=' + encodeURIComponent(msg), '_blank');
+  });
+</script>
+</body>
+</html>
